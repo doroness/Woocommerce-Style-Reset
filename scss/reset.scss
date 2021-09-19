@@ -1,0 +1,107 @@
+$main: #000;
+$secondary: #fff;
+$text-dark: #000;
+$text-light: #fff; 
+$content-width: auto;
+
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+@mixin message-default {
+    margin-bottom: 0;
+    background-color:$secondary;
+    margin-left: 0;
+    border-radius: 0;
+    color: $text-dark;
+    clear: both;
+    border-left: 10px solid $main;
+    padding: 10px;
+    position: relative;
+    list-style: none outside;
+    max-width: $content-width;
+    margin: auto;
+}
+@mixin button-default {
+    float: right;
+    background: 0 0;
+    color: $text-dark;
+    box-shadow: none;
+    line-height: 1.5;
+    margin-left: 1em;
+    padding: 0 0 0 1em;
+    border-radius: 0;
+}
+/*--------------------------------*/
+/*------- General Reset ----------*/
+/*--------------------------------*/
+.woocommerce-shipping-methods {
+    @include reset-list;
+}
+.products {
+    @include reset-list;
+}
+.wc_payment_methods {
+    @include reset-list;
+}
+.woocommerce-error {
+    @include reset-list;
+}
+.woocommerce-info {
+    @include message-default;
+}
+
+.variations_form {
+    table.variations {
+        td {
+            background-color: transparent;
+            border: none;
+        }
+        td.value {
+            select {
+                border-radius: 0;
+                border: none;
+                background-color: $secondary;
+                color: $text-light;
+            }
+        }
+    }
+}
+
+.woocommerce-product-gallery {
+    & {
+        position: relative;
+    }
+    ol.flex-control-nav {
+        @include reset-list;
+        display: block;
+        margin-left: -5px;
+        margin-right: -5px;
+        li {
+            cursor: pointer;
+            display: inline-block;
+            width: 20%;
+            padding: 5px 5px 0 5px;
+        }
+    }
+    .woocommerce-product-gallery__trigger {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 9;
+    }
+}
+.woocommerce-ordering {
+    & {
+        margin-bottom: 10px;
+        max-width: 25%;
+    }
+    .orderby {
+        border-radius: 0;
+        border: none;
+        background-color: $secondary;
+
+    }
+}
