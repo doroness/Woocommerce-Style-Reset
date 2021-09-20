@@ -1,0 +1,34 @@
+/*--------------------------------*/
+/*-------wc-tabs -----------------*/
+/*--------------------------------*/
+.woocommerce-tabs {
+    .wc-tabs {
+        @include reset-list;
+        display: flex;
+    }
+    .woocommerce-Tabs-panel {
+        &.panel {
+            border-top: none;
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width:1024px) {
+    .widget_price_filter {
+        .price_slider_amount {
+            text-align:$align;
+            .button {
+                display: block;
+            }
+        }
+    
+    }
+}
+
+/*!rtl:begin:ignore*/
+.rtl .widget_price_filter .price_label,
+.rtl .widget_price_filter .price_label span {
+    direction: $direction;
+    unicode-bidi: embed;
+}

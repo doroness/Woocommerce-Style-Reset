@@ -1,0 +1,83 @@
+/*------------------------------------------*/
+/*--------filter by price (Widget)----------*/
+/*------------------------------------------*/
+.widget_price_filter {
+    .price_slider { 
+        margin-bottom: 1em;
+    }
+    .price_slider_amount {
+        text-align: right;
+        line-height: 2.0em;
+        font-size: 1em;
+        .button {
+            font-size:1.15em;
+            float: left;
+        }
+    }
+    .price_slider_wrapper {
+        .ui-widget-content {
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            background: $secondary;
+            background: -webkit-gradient(linear,left top,left bottom,from(#1e1e1e),to(#6a6a6a));
+            background: -webkit-linear-gradient(#1e1e1e,#6a6a6a);
+            background: -moz-linear-gradient(center top,#1e1e1e 0%,#6a6a6a 100%);
+            background: -moz-gradient(center top,#1e1e1e 0%,#6a6a6a 100%);
+        }
+    }
+    .ui-slider {
+        position: relative;
+        text-align: left;
+        .ui-slider-handle {
+            position: absolute;
+            z-index: 2;
+            width: 1em;
+            height: 1em;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            border: 1px solid rgba(0, 0, 0, 0.25);
+            cursor: pointer;
+            background: #e7e7e7;
+            background: -webkit-gradient(linear,left top,left bottom,from(#FEFEFE),to(#e7e7e7));
+            background: -webkit-linear-gradient(#FEFEFE,#e7e7e7);
+            background: -moz-linear-gradient(center top,#FEFEFE 0%,#e7e7e7 100%);
+            background: -moz-gradient(center top,#FEFEFE 0%,#e7e7e7 100%);
+            outline: none;
+            -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.65) inset;
+            -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.65) inset;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.65) inset;
+            &:last-child {
+                margin-left: -1em;
+            }
+        }
+        .ui-slider-range {
+            position: absolute;
+            z-index: 1;
+            font-size:1em;
+            display: block;
+            border: 0;
+            background: none repeat scroll 0 0 $main;
+            box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.25) inset;
+            -webkit-box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.25) inset;
+            -moz-box-shadow: 1px 1px 1px 0.5px rgba(0, 0, 0, 0.25) inset;
+            -webkit-border-radius: 1em;
+            -moz-border-radius: 1em;
+            border-radius: 1em;
+        }
+    }
+    .ui-slider-horizontal {
+        height: 0.9em;
+        .ui-slider-range {
+            top: 0;
+            height: 100%;
+        }
+        .ui-slider-range-min {
+            left: -1px;
+        }
+        .ui-slider-range-max {
+            right: -1px;
+        }
+    }
+}

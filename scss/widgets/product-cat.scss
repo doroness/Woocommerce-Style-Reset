@@ -1,0 +1,12 @@
+/*------------------------------------------*/
+/*------ widget_product_categories ---------*/
+/*------------------------------------------*/
+.widget_product_categories {
+    .product-categories {
+        @include reset-list;
+    }
+    .children {
+        @include reset-list;
+        padding-left: 10px;
+    }
+}

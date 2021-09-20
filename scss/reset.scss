@@ -1,8 +1,11 @@
+
 $main: #000;
 $secondary: #fff;
 $text-dark: #000;
 $text-light: #fff; 
 $content-width: auto;
+$direction: ltr;
+$align: right;
 
 
 @mixin reset-list {
@@ -10,6 +13,7 @@ $content-width: auto;
     padding: 0;
     list-style: none;
 }
+
 @mixin message-default {
     margin-bottom: 0;
     background-color:$secondary;
@@ -24,6 +28,7 @@ $content-width: auto;
     max-width: $content-width;
     margin: auto;
 }
+
 @mixin button-default {
     float: right;
     background: 0 0;
@@ -34,9 +39,11 @@ $content-width: auto;
     padding: 0 0 0 1em;
     border-radius: 0;
 }
+
 /*--------------------------------*/
 /*------- General Reset ----------*/
 /*--------------------------------*/
+
 .woocommerce-shipping-methods {
     @include reset-list;
 }

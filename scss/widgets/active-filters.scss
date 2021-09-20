@@ -1,0 +1,17 @@
+/*-------------------------------------------*/
+/*------- Active Filters (widget) -----------*/
+/*-------------------------------------------*/
+.widget_layered_nav_filters {
+    ul {
+        margin-left: -5px;
+        margin-right: -5px;
+         @include reset-list;
+         li {
+             display: inline-block;
+             padding: 5px;
+             a {
+                 text-decoration: underline;
+             }
+         }
+     }
+ }

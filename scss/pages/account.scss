@@ -1,0 +1,20 @@
+/*-------------------------------------------*/
+/*-------------- MyAccount ------------------*/
+/*-------------------------------------------*/
+.woocommerce-account {
+    .woocommerce-MyAccount-navigation {
+        ul {
+            @include reset-list;
+            display: block;
+            white-space: nowrap;
+            li {
+                display: inline-block;
+                white-space: normal;
+                padding: 10px;
+                &:first-child {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+}

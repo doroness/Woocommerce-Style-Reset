@@ -1,0 +1,135 @@
+/*-------------------------------------------*/
+/*--------- woocommerce messages ------------*/
+/*-------------------------------------------*/
+
+.woocommerce-Tabs-panel--reviews #comment {
+    border-radius: 0px;
+    border: none;
+    background-color: rgb(248, 247, 252);
+    box-shadow: rgba(113, 113, 113, 0.15) 1px 2px 5px inset;
+    resize: vertical;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.woocommerce-notices-wrapper {
+    .woocommerce-error {
+        @include message-default;
+    }
+    .woocommerce-info {
+        @include message-default;
+    }
+    .woocommerce-message{
+        @include message-default;
+        a {
+            color:$main;
+            text-decoration: underline;
+        }
+    }
+    .woocommerce-noreviews{
+        @include message-default;
+    }
+    .no-comments {
+        @include message-default;
+    }   
+}
+p.cart-empty {
+    @include message-default;
+}
+
+
+.woocommerce-error:after,
+.woocommerce-error:before,
+.woocommerce-info:after,
+.woocommerce-info:before,
+.woocommerce-message:after,
+.woocommerce-message:before,
+.woocommerce-noreviews:after,
+.woocommerce-noreviews:before,
+p.no-comments:after,p.no-comments:before {
+    content: "";
+    display: table
+}
+
+.woocommerce-error:after,
+.woocommerce-info:after,
+.woocommerce-message:after,
+.woocommerce-noreviews:after,
+p.no-comments:after {
+    clear: both
+}
+
+.woocommerce-error a,
+.woocommerce-info a,
+.woocommerce-message a,
+.woocommerce-noreviews a,
+p.no-comments a {
+    color: $text-light;
+}
+
+.woocommerce-error a:hover,
+.woocommerce-info a:hover,
+.woocommerce-message a:hover,
+.woocommerce-noreviews a:hover,
+p.no-comments a:hover {
+    color: $main;
+    opacity: .7
+}
+
+.woocommerce-error a.button:hover,.woocommerce-info a.button:hover,.woocommerce-message a.button:hover,.woocommerce-noreviews a.button:hover,p.no-comments a.button:hover {
+    opacity: 1
+}
+.woocommerce-error:before,
+.woocommerce-info:before,
+.woocommerce-message:before,
+.woocommerce-noreviews:before,
+p.no-comments:before {
+    font-family: WooCommerce;
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    top: 0.5em;
+    left: 1.5em;
+}
+
+.woocommerce-error .button,
+.woocommerce-info .button,
+.woocommerce-message .button,
+.woocommerce-noreviews .button,
+p.no-comments .button {
+    @include button-default;
+}
+
+.woocommerce-error .button:hover,
+.woocommerce-info .button:hover,
+.woocommerce-message .button:hover,
+.woocommerce-noreviews .button:hover,
+p.no-comments .button:hover {
+    color: $main;
+}
+
+.woocommerce-error pre,.woocommerce-info pre,.woocommerce-message pre,.woocommerce-noreviews pre,p.no-comments pre {
+    background-color: rgba(0,0,0,.1)
+}
+
+.woocommerce-message:before {
+    content: "✔";
+    color:$main;
+}
+.site-content>.col-full>.woocommerce>.woocommerce-error:first-child,.site-content>.col-full>.woocommerce>.woocommerce-info:first-child,.site-content>.col-full>.woocommerce>.woocommerce-message:first-child {
+    margin-top: 2em
+}
+.woocommerce-error:before {
+    content: "✖";
+}
+.woocommerce-error {
+    background-color:$secondary;
+    color:$main;
+    padding: 10px;
+}
+.woocommerce-info,
+.woocommerce-noreviews,
+p.no-comments {
+    background-color: $secondary;
+}

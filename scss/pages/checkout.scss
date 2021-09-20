@@ -1,0 +1,73 @@
+/*-------------------------------------------*/
+/*--------------- Checkout-------------------*/
+/*-------------------------------------------*/
+.woocommerce-checkout {
+    .woocommerce-checkout {
+        white-space: nowrap;
+        #customer_details {
+            width: 60%;
+            display: inline-block;
+            white-space: normal;
+            vertical-align: top;
+            vertical-align: top;
+        }
+        #order_review {
+            width: 37%;
+            display: inline-block;
+            margin-right: 3%;
+            white-space: normal;
+            vertical-align: top;
+            position: sticky;
+            top: 10px;
+            #place_order {
+                width: 100%;
+            }
+        }
+        input {
+            border: none;
+            background-color: #efefef;
+            box-shadow: -1px -1px 10px #0000000d inset;
+        }
+        .select2-selection {
+            border: none;
+            background-color: #efefef;
+            box-shadow: -1px -1px 10px #0000000d inset;
+            height: auto;
+            line-height: 1.5;
+            border-radius:0;
+        }
+    }/* heckout form */
+    .checkout_coupon {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        p {
+            flex: 1 1 100%;
+            margin: 0;
+            line-height: 1.5;
+        }
+        p.form-row.form-row-first {
+            flex: 1 1 85%;
+        }
+        p.form-row.form-row-last {
+            flex: 1 1 15%;
+            .button {
+                width: 100%;
+            }
+        }
+        .input-text {
+            border: none;
+            background-color: #efefef;
+            box-shadow: -1px -1px 10px #0000000d inset;
+        }
+    }
+    .woocommerce-form-coupon-toggle {
+        a {
+          color: #fff;
+          &:hover {
+              color: #fff;
+              text-decoration: underline;
+          }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+/*-------------------------------------------*/
+/*------------------- Cart ------------------*/
+/*-------------------------------------------*/
+.woocommerce-cart {
+    .woocommerce {
+        white-space: nowrap;
+        .woocommerce-cart-form {
+            width: 67%;
+            display: inline-block;
+            white-space: normal;
+            vertical-align: top;
+            vertical-align: top;
+            .shop_table {
+                .actions {
+                    text-align: left;
+                    .coupon {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        margin-bottom: 15px;
+                        label {
+                            display: none;
+                        }
+                    }
+                }
+                
+            }
+    
+        }
+        .cart-collaterals  {
+            width: 30%;
+            display: inline-block;
+            margin-right: 3%;
+            white-space: normal;
+            vertical-align: top;
+            position: sticky;
+            top: 10px;
+            .checkout-button {
+                background-color: $text-dark;
+                color: $text-light;
+                display: block;
+                width: 100%;
+                line-height: 1.5;
+                padding: 10px 10px;
+                text-align: center;
+                border: 1px $text-dark solid;
+                font-size: 22px;
+                font-weight: 100;
+                &:hover {
+                    background-color: $text-light;
+                    color: $text-dark;
+                }
+            }
+        }
+    }
+}

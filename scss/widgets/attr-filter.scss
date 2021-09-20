@@ -1,0 +1,11 @@
+/*------------------------------------------*/
+/*------ Attribute Filter (widget) ---------*/
+/*------------------------------------------*/
+.woocommerce-widget-layered-nav {
+    .woocommerce-widget-layered-nav-list {
+        @include reset-list;
+        .count {
+            float: left;
+        }
+    }
+}

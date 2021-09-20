@@ -1,0 +1,15 @@
+/*-------------------------------------------*/
+/*------------- pagination ------------------*/
+/*-------------------------------------------*/
+.woocommerce-pagination {
+    .page-numbers {
+        @include reset-list;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        direction: ltr;
+        li {
+            padding: 5px;
+        }
+    }
+}
